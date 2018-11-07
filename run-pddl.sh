@@ -1,0 +1,1 @@
+./metric-ff/ff -o domain.pddl -f problem.pddl
