@@ -28,7 +28,23 @@
     (qtd-demand ?r - retail)
 )
 
-(:action order
+(:action produce-low
+    :parameters (?i - industry)
+    :precondition (and )
+    :effect (and 
+        (increase (stock ?i) 1)
+    )
+)
+
+(:action produce-high
+    :parameters (?i - industry)
+    :precondition (and )
+    :effect (and 
+        (increase (stock ?i) 5)
+    )
+)
+
+(:action replenish-low
     :parameters (?i - industry
                  ?r - retail
                 )
@@ -38,6 +54,19 @@
     :effect (and 
                 (increase (stock ?r) 1)
                 (decrease (stock ?i) 1)
+    )
+)
+
+(:action replenish-high
+    :parameters (?i - industry
+                 ?r - retail
+                )
+    :precondition (and 
+                    (>= (stock ?i) 5)
+                )
+    :effect (and 
+                (increase (stock ?r) 5)
+                (decrease (stock ?i) 5)
     )
 )
 

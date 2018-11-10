@@ -17,7 +17,7 @@
 ; comentar a relação da quantidade de varejo com o tamanho da árvore
 ; analysis of complexity
 
-
+Nesse trabalho, nos propormos o uso de numerical planning
 
 
 
@@ -29,3 +29,13 @@
 - dado um problema
 - atraves de pddl
 - estou simulando ações e procurando um plano, que de o melhor conjunto de ações para um varejo ou industria
+
+
+
+- Visão da industria
+step    0: ORDER-HIGH PROCTER WALMART
+        1: ORDER-HIGH PROCTER WALMART
+        2: ORDER-LOW PROCTER WALMART
+        3: ATTEND-DEMAND WALMART
+
+Dado que a industria conhece a demanda do varejo, o plano acima atende a demanda do varejo
