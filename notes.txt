@@ -1,0 +1,31 @@
+; Incluir diferentes tipos de ações - order50, order20, order 10
+; Ver alguma forma de de repente ponderar cada ação, por exemplo order50 teria q penalizar mais o varejo
+; Pensar em reward e orderQuantity, tipo, pensar num plano que MINIMIZE o orderQuantity
+
+; consumeDemand - criar uma action que reduz o stock do varejo em um número fixo 
+; um dos goals seria a quantidade de chamadas de consumeDemand (qtd-consume-demands)
+; pensar que esse consumeDemand seria uma "leva de demanda"
+; (supondo que seja a demanda media)
+
+; Pensar sobre diferenciar entre stock fastMover e stock slowMover
+
+
+; TODO: Pensar em buffer de estoque max e min, sendo definido no effect que quando o 
+; stock foi maior ou menor que o buffer, aumenta alguma métrica, que deve ser otimizada usando o fluents
+;define actions here
+
+; comentar a relação da quantidade de varejo com o tamanho da árvore
+; analysis of complexity
+
+
+
+
+
+  industry -> retail
+
+  - orderQuantity
+  - 
+
+- dado um problema
+- atraves de pddl
+- estou simulando ações e procurando um plano, que de o melhor conjunto de ações para um varejo ou industria
