@@ -1,3 +1,5 @@
+# Planner supports
+
 | Planner       | Conditional | Temporal | Numeric   |
 |---------------|-------------|----------|-----------|
 | ENHSP         | YES         | NO       | YES       |
