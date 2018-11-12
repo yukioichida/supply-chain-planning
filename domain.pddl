@@ -1,46 +1,37 @@
 ;Header and description
-
 (define (domain supply-chain)
 
-;remove requirements that are not needed
-(:requirements :strips :fluents :typing :conditional-effects :negative-preconditions :equality)
+(:requirements :equality :typing :conditional-effects)
 
 (:types ;todo: enumerate types and their hierarchy here, e.g. car truck bus - vehicle
     retail industry
 )
 
-; Pensar em como diferenciar produtos por categorias
-; Com a função de estoque, não temos a diferenciação de categorias
-; Uma industria pode fornecer mais de uma categoria 
-; Um varejo pode OU não vender produtos de mais de uma categoria
-;(:constants )
-
-; Verificar o stock out
-; De repente ter conexões ponderadas (exemplo, zaffari teria um peso maior do que o varejo gecepel)
 (:predicates
-    (connected ?i - industry ?r - retail) ; indicates whether a retail is a connection of a industry
-    (buffer-reached ?r - retail) ; indicates whether a retail needs replenishment
+    (limit-reached ?i - industry)
+    (connected ?i - industry ?r - retail) ; indicates whether a retail is a connection of an industry
 )
 
-(:functions ;todo: define numeric functions here
-    (stock ?x)
-    (demand ?r - retail)
-    (qtd-demand ?r - retail)
+(:functions 
+    (limit ?i - industry)
+    (made-items ?i - industry) ; items ready to the replenishment of retails stock
+    (stock ?r - retail ?i - industry) ; stock level of a retail given products of an industry
+    (demand ?r - retail ?i - industry) ; quantity of demands that a retail should attend
+    (monthly-demand ?r - retail ?i - industry); quantity of itens of a industry that a retail sells
+    (cost)
 )
 
-(:action produce-low
+(:action produce
     :parameters (?i - industry)
-    :precondition (and )
+    :precondition (and 
+                    (not (limit-reached ?i))
+                )
     :effect (and 
-        (increase (stock ?i) 1)
-    )
-)
-
-(:action produce-high
-    :parameters (?i - industry)
-    :precondition (and )
-    :effect (and 
-        (increase (stock ?i) 5)
+        (increase (made-items ?i) 1)
+        (increase (cost) 1)
+        (when   (= (limit ?i) (made-items ?i))
+                (limit-reached ?i)
+        )
     )
 )
 
@@ -49,11 +40,15 @@
                  ?r - retail
                 )
     :precondition (and 
-                    (> (stock ?i) 0)
+                    (> (made-items ?i) 0)
                 )
     :effect (and 
-                (increase (stock ?r) 1)
-                (decrease (stock ?i) 1)
+                (increase (stock ?r ?i) 1)
+                (decrease (made-items ?i) 1)
+                (decrease (cost) 1)
+                (when   (> (limit ?i) (made-items ?i))
+                        (not (limit-reached ?i))
+                )
     )
 )
 
@@ -62,24 +57,29 @@
                  ?r - retail
                 )
     :precondition (and 
-                    (>= (stock ?i) 5)
+                    (>= (made-items ?i) 2)
                 )
     :effect (and 
-                (increase (stock ?r) 5)
-                (decrease (stock ?i) 5)
+                (increase (stock ?r ?i) 2)
+                (decrease (made-items ?i) 2)
+                (decrease (cost) 2)
+                (when   (> (limit ?i) (made-items ?i))
+                        (not (limit-reached ?i))
+                )
     )
 )
 
 (:action attend-demand
-    :parameters (?r - retail)
+    :parameters (?r - retail
+                 ?i - industry)
     :precondition (and 
-                        (>= (stock ?r) (qtd-demand ?r))
+                        (>= (stock ?r ?i) (monthly-demand ?r ?i))
     )
     :effect (and 
-                (decrease (stock ?r) (qtd-demand ?r))
-                (increase (demand ?r) 1)
+                (decrease (stock ?r ?i) (monthly-demand ?r ?i))
+                (increase (demand ?r ?i) 1)
+                ;(decrease (cost) 10)
             )
 )
-
 
 )
