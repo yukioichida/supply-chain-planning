@@ -1,7 +1,7 @@
 ;Header and description
 (define (domain supply-chain)
 
-(:requirements :equality :typing :conditional-effects)
+(:requirements :equality :typing :conditional-effects :fluents)
 
 (:types ;todo: enumerate types and their hierarchy here, e.g. car truck bus - vehicle
     retail industry
@@ -18,17 +18,29 @@
     (stock ?r - retail ?i - industry) ; stock level of a retail given products of an industry
     (demand ?r - retail ?i - industry) ; quantity of demands that a retail should attend
     (monthly-demand ?r - retail ?i - industry); quantity of itens of a industry that a retail sells
-    (cost)
+    (total-cost)
 )
 
-(:action produce
+(:action produce-high
+    :parameters (?i - industry)
+    :precondition (and 
+                    (not (limit-reached ?i))
+                )
+    :effect (and 
+        (increase (made-items ?i) 2)
+        (when   (= (limit ?i) (made-items ?i))
+                (limit-reached ?i)
+        )
+    )
+)
+
+(:action produce-low
     :parameters (?i - industry)
     :precondition (and 
                     (not (limit-reached ?i))
                 )
     :effect (and 
         (increase (made-items ?i) 1)
-        (increase (cost) 1)
         (when   (= (limit ?i) (made-items ?i))
                 (limit-reached ?i)
         )
@@ -45,7 +57,7 @@
     :effect (and 
                 (increase (stock ?r ?i) 1)
                 (decrease (made-items ?i) 1)
-                (decrease (cost) 1)
+                (increase (total-cost) 1)
                 (when   (> (limit ?i) (made-items ?i))
                         (not (limit-reached ?i))
                 )
@@ -62,7 +74,7 @@
     :effect (and 
                 (increase (stock ?r ?i) 2)
                 (decrease (made-items ?i) 2)
-                (decrease (cost) 2)
+                (increase (total-cost) 2)
                 (when   (> (limit ?i) (made-items ?i))
                         (not (limit-reached ?i))
                 )

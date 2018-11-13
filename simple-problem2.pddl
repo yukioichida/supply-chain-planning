@@ -8,7 +8,9 @@
 ;One industry with the objective of attend the demand of one retail
 (:init
     (= (made-items procter) 0)
-    (= (cost) 0)
+
+    (= (limit procter) 2)
+    (= (total-cost) 0)
     
 
     (= (stock walmart procter) 0)
@@ -29,5 +31,5 @@
 )
 
 ; maximize does not work
-;(:metric minimize (cost))
+(:metric minimize (total-cost))
 )
