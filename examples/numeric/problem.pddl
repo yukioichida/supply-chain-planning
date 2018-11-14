@@ -54,7 +54,7 @@
         (is-dropping-dock waypoint7)
         
         (rover rover1)
-        (at rover1 waypoint6)
+        (at-place rover1 waypoint6)
         (= (battery-amount rover1) 40) 
         (= (sample-amount rover1) 0)
     )
@@ -73,9 +73,9 @@
             (taken-image objective3)
             (taken-image objective4)     
             
-            (at rover1 waypoint1))
+            (at-place rover1 waypoint1))
     )
     
     (:metric 
-        minimize (battery-amount))
+        minimize (battery-amount rover1))
 )

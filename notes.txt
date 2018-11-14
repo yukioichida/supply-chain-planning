@@ -34,3 +34,8 @@ Dado que a industria conhece a demanda do varejo, o plano acima atende a demanda
 
 - OBSERVAÇÕES
 - DECREASE não funciona em uma function usada como metric
+
+
+- Comentar sobre total cost
+  - Ele otimiza toda a cadeia, pensando na relação ganha ganha  
+  - No exemplo do simple problem, tomando o menor plano gera excesso de estoque no varejo

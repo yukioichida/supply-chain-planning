@@ -1,12 +1,6 @@
 (define (domain rover-domain)
     (:requirements :fluents)
     
-    (:functions
-        (battery-amount ?rover)
-        (sample-amount ?rover)
-        (battery-capacity)
-        (sample-capacity)
-    )
     
     (:predicates
         (can-move ?from-waypoint ?to-waypoint)
@@ -14,7 +8,7 @@
         (is-in ?sample ?waypoint)
         (been-at ?rover ?waypoint)
         (carry ?rover ?sample)  
-        (at ?rover ?waypoint)
+        (at-place ?rover ?waypoint)
         (is-recharging-dock ?waypoint)
         (is-dropping-dock ?waypoint)
         (taken-image ?objective)
@@ -23,6 +17,14 @@
         (waypoint ?waypoint)    
         (sample ?sample) 
         (rover ?rover)                             
+    )
+
+
+    (:functions
+        (battery-amount ?rover)
+        (sample-amount ?rover)
+        (battery-capacity)
+        (sample-capacity)
     )
     
     (:action move
@@ -36,15 +38,15 @@
                 (rover ?rover)
                 (waypoint ?from-waypoint)
                 (waypoint ?to-waypoint) 
-                (at ?rover ?from-waypoint)
+                (at-place ?rover ?from-waypoint)
                 (can-move ?from-waypoint ?to-waypoint)
                 (> (battery-amount ?rover) 8))
 
         :effect 
             (and 
-                (at ?rover ?to-waypoint)
+                (at-place ?rover ?to-waypoint)
                 (been-at ?rover ?to-waypoint)
-                (not (at ?rover ?from-waypoint))
+                (not (at-place ?rover ?from-waypoint))
                 (decrease (battery-amount ?rover) 8))
     )
 
@@ -60,7 +62,7 @@
                 (sample ?sample)
                 (waypoint ?waypoint) 
                 (is-in ?sample ?waypoint)
-                (at ?rover ?waypoint)
+                (at-place ?rover ?waypoint)
                 (> (battery-amount ?rover) 3)
                 (< (sample-amount ?rover) (sample-capacity)))
 
@@ -84,7 +86,7 @@
                 (sample ?sample)
                 (waypoint ?waypoint)
                 (is-dropping-dock ?waypoint)
-                (at ?rover ?waypoint)
+                (at-place ?rover ?waypoint)
                 (carry ?rover ?sample)
                 (> (battery-amount ?rover) 2))                     
                            
@@ -108,7 +110,7 @@
                 (rover ?rover)
                 (objective ?objective)
                 (waypoint ?waypoint)
-                (at ?rover ?waypoint)
+                (at-place ?rover ?waypoint)
                 (is-visible ?objective ?waypoint)
                 (> (battery-amount ?rover) 1))
                            
@@ -127,7 +129,7 @@
 	        (and
 	            (rover ?rover)
 	            (waypoint ?waypoint)  
-	            (at ?rover ?waypoint)
+	            (at-place ?rover ?waypoint)
 	            (is-recharging-dock ?waypoint) 
 	            (< (battery-amount ?rover) 20))
 	            

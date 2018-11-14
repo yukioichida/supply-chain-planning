@@ -1,0 +1,1 @@
+./enhsp/enhsp -o domain.pddl -f $1.pddl -planner aibr
