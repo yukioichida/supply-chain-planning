@@ -1,0 +1,86 @@
+Domain parsed
+Problem parsed
+Grounding..
+Light Validation Completed
+Simplification..
+Grounding and Simplification finished
+|A|:21
+|P|:0
+|E|:0
+A* with light numeric landmarks
+w_h set to be 1
+g_h set to be 1
+Running WA-STAR
+Smart Metric Intersection: true
+Landmarks:13
+Not Trivial Landmarks:10
+Hard Conditions: 0
+Simple Conditions: 27
+Reachable actions and processes: |A U P U E|:19
+Take all reachable actions
+Actions used at init:19
+h(n = s_0)=7.3333335
+f(n) = 7.3333335 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.233)
+f(n) = 8.333334 (Expanded Nodes: 8, Evaluated States: 49, Time: 0.293)
+f(n) = 9.333334 (Expanded Nodes: 30, Evaluated States: 166, Time: 0.378)
+f(n) = 10.333334 (Expanded Nodes: 80, Evaluated States: 424, Time: 0.53)
+f(n) = 10.833333 (Expanded Nodes: 185, Evaluated States: 947, Time: 0.75)
+f(n) = 10.833334 (Expanded Nodes: 186, Evaluated States: 950, Time: 0.752)
+f(n) = 11.333333 (Expanded Nodes: 193, Evaluated States: 963, Time: 0.757)
+f(n) = 11.333334 (Expanded Nodes: 201, Evaluated States: 1011, Time: 0.774)
+f(n) = 11.833333 (Expanded Nodes: 393, Evaluated States: 1888, Time: 1.077)
+f(n) = 11.833334 (Expanded Nodes: 398, Evaluated States: 1908, Time: 1.084)
+f(n) = 12.0 (Expanded Nodes: 419, Evaluated States: 1963, Time: 1.105)
+f(n) = 12.333333 (Expanded Nodes: 435, Evaluated States: 1975, Time: 1.11)
+f(n) = 12.333334 (Expanded Nodes: 463, Evaluated States: 2133, Time: 1.163)
+f(n) = 12.833333 (Expanded Nodes: 788, Evaluated States: 3505, Time: 1.672)
+f(n) = 12.833334 (Expanded Nodes: 803, Evaluated States: 3573, Time: 1.693)
+f(n) = 13.0 (Expanded Nodes: 849, Evaluated States: 3709, Time: 1.736)
+f(n) = 13.333333 (Expanded Nodes: 897, Evaluated States: 3775, Time: 1.759)
+f(n) = 13.333334 (Expanded Nodes: 965, Evaluated States: 4135, Time: 1.865)
+f(n) = 13.833333 (Expanded Nodes: 1494, Evaluated States: 6213, Time: 2.532)
+f(n) = 13.833334 (Expanded Nodes: 1529, Evaluated States: 6378, Time: 2.59)
+f(n) = 14.0 (Expanded Nodes: 1614, Evaluated States: 6633, Time: 2.685)
+f(n) = 14.333333 (Expanded Nodes: 1722, Evaluated States: 6821, Time: 2.738)
+f(n) = 14.333334 (Expanded Nodes: 1872, Evaluated States: 7585, Time: 2.934)
+f(n) = 14.833333 (Expanded Nodes: 2675, Evaluated States: 10462, Time: 3.689)
+f(n) = 14.833334 (Expanded Nodes: 2745, Evaluated States: 10788, Time: 3.77)
+f(n) = 15.0 (Expanded Nodes: 2886, Evaluated States: 11205, Time: 3.89)
+f(n) = 15.333333 (Expanded Nodes: 3110, Evaluated States: 11618, Time: 3.997)
+f(n) = 15.333334 (Expanded Nodes: 3396, Evaluated States: 13007, Time: 4.386)
+f(n) = 15.5 (Expanded Nodes: 4581, Evaluated States: 16940, Time: 5.522)
+f(n) = 15.833333 (Expanded Nodes: 4597, Evaluated States: 16952, Time: 5.526)
+f(n) = 15.833334 (Expanded Nodes: 4723, Evaluated States: 17513, Time: 5.714)
+f(n) = 16.0 (Expanded Nodes: 4936, Evaluated States: 18130, Time: 5.878)
+f(n) = 16.333334 (Expanded Nodes: 5362, Evaluated States: 18950, Time: 6.084)
+f(n) = 16.5 (Expanded Nodes: 7577, Evaluated States: 26585, Time: 8.323)
+f(n) = 16.666666 (Expanded Nodes: 7633, Evaluated States: 26657, Time: 8.346)
+f(n) = 16.833334 (Expanded Nodes: 7657, Evaluated States: 26673, Time: 8.351)
+f(n) = 17.0 (Expanded Nodes: 8184, Evaluated States: 28407, Time: 8.912)
+f(n) = 17.333334 (Expanded Nodes: 8934, Evaluated States: 29900, Time: 9.325)
+f(n) = 17.5 (Expanded Nodes: 12195, Evaluated States: 40667, Time: 12.339)
+f(n) = 17.666666 (Expanded Nodes: 12327, Evaluated States: 40888, Time: 12.409)
+f(n) = 17.833334 (Expanded Nodes: 12399, Evaluated States: 40972, Time: 12.434)
+f(n) = 18.0 (Expanded Nodes: 13188, Evaluated States: 43426, Time: 13.266)
+f(n) = 18.333334 (Expanded Nodes: 14450, Evaluated States: 45961, Time: 13.964)
+f(n) = 18.5 (Expanded Nodes: 19125, Evaluated States: 60790, Time: 18.464)
+f(n) = 18.666666 (Expanded Nodes: 19383, Evaluated States: 61282, Time: 18.623)
+f(n) = 18.833334 (Expanded Nodes: 19561, Evaluated States: 61612, Time: 18.729)
+f(n) = 19.0 (Expanded Nodes: 20704, Evaluated States: 65003, Time: 19.845)
+f(n) = 19.333334 (Expanded Nodes: 22706, Evaluated States: 69076, Time: 20.976)
+f(n) = 19.5 (Expanded Nodes: 29249, Evaluated States: 89011, Time: 26.767)
+f(n) = 19.666666 (Expanded Nodes: 29699, Evaluated States: 89934, Time: 27.048)
+f(n) = 19.833334 (Expanded Nodes: 30091, Evaluated States: 90730, Time: 27.288)
+f(n) = 20.0 (Expanded Nodes: 31700, Evaluated States: 95282, Time: 28.833)
+f(n) = 20.166666 (Expanded Nodes: 34770, Evaluated States: 101531, Time: 31.105)
+f(n) = 20.333334 (Expanded Nodes: 34794, Evaluated States: 101547, Time: 31.111)
+f(n) = 20.5 (Expanded Nodes: 43762, Evaluated States: 127787, Time: 38.842)
+f(n) = 20.666666 (Expanded Nodes: 44480, Evaluated States: 129320, Time: 39.286)
+f(n) = 20.833334 (Expanded Nodes: 45255, Evaluated States: 131003, Time: 39.809)
+f(n) = 21.0 (Expanded Nodes: 47464, Evaluated States: 136994, Time: 41.483)
+f(n) = 21.166666 (Expanded Nodes: 52066, Evaluated States: 146264, Time: 44.203)
+f(n) = 21.333334 (Expanded Nodes: 52150, Evaluated States: 146356, Time: 44.231)
+f(n) = 21.5 (Expanded Nodes: 64238, Evaluated States: 180400, Time: 53.18)
+f(n) = 21.666666 (Expanded Nodes: 65344, Evaluated States: 182741, Time: 53.87)
+f(n) = 21.833334 (Expanded Nodes: 66777, Evaluated States: 186039, Time: 55.119)
+f(n) = 22.0 (Expanded Nodes: 69730, Evaluated States: 193765, Time: 57.693)

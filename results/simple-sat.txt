@@ -1,0 +1,51 @@
+Domain parsed
+Problem parsed
+Grounding..
+Light Validation Completed
+Simplification..
+Grounding and Simplification finished
+|A|:7
+|P|:0
+|E|:0
+GBFS with numeric hadd
+w_h set to be 1
+g_h set to be 0
+Running Greedy Best First Search
+Hard Conditions: 0
+Simple Conditions: 11
+Reachable actions and processes: |A U P U E|:8
+Take all reachable actions
+Actions used at init:7
+h(n = s_0)=8.667667
+ g(n)= 3.0 h(n)=4.6676664
+ g(n)= 6.0 h(n)=1.6676667
+ g(n)= 14.0 h(n)=1.3343334
+ g(n)= 17.0 h(n)=1.001
+ g(n)= 18.0 h(n)=0.001
+ g(n)= 18.0 h(n)=0.0
+Problem Solved
+Plan is executed correctly
+(Pddl2.1 semantics) Plan is valid:true
+(0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) produce-low Parameters: procter  - vendor  
+(0,00000) produce-low Parameters: procter  - vendor  
+(0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
+(0,00000) replenish-low Parameters: procter  - vendor  walmart  - retail  
+(0,00000) replenish-low Parameters: procter  - vendor  walmart  - retail  
+(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
+(0,00000) attend-monthly-demand Parameters: walmart  - retail  procter  - vendor  
+
+Plan-Length:9
+Metric-Value:18.0
+Planning Time:425
+Heuristic Time:14
+Search Time:99
+Expanded Nodes:16
+States Evaluated:74
+Duration:9
+Total Cost:18.0
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:7
+Number of LP invocations:0

@@ -1,0 +1,57 @@
+Domain parsed
+Problem parsed
+Grounding..
+Light Validation Completed
+Simplification..
+Grounding and Simplification finished
+|A|:7
+|P|:0
+|E|:0
+A* with light numeric landmarks
+w_h set to be 1
+g_h set to be 1
+Running WA-STAR
+Smart Metric Intersection: true
+Landmarks:5
+Not Trivial Landmarks:4
+Hard Conditions: 0
+Simple Conditions: 11
+Reachable actions and processes: |A U P U E|:7
+Take all reachable actions
+Actions used at init:7
+h(n = s_0)=3.0
+f(n) = 3.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.159)
+f(n) = 3.6666667 (Expanded Nodes: 1, Evaluated States: 2, Time: 0.161)
+f(n) = 4.666667 (Expanded Nodes: 3, Evaluated States: 8, Time: 0.172)
+f(n) = 5.0 (Expanded Nodes: 9, Evaluated States: 24, Time: 0.192)
+f(n) = 5.333333 (Expanded Nodes: 10, Evaluated States: 26, Time: 0.193)
+f(n) = 5.6666665 (Expanded Nodes: 12, Evaluated States: 33, Time: 0.198)
+f(n) = 5.666667 (Expanded Nodes: 14, Evaluated States: 39, Time: 0.202)
+f(n) = 6.0 (Expanded Nodes: 27, Evaluated States: 64, Time: 0.215)
+f(n) = 6.333333 (Expanded Nodes: 30, Evaluated States: 68, Time: 0.217)
+f(n) = 6.6666665 (Expanded Nodes: 38, Evaluated States: 85, Time: 0.233)
+f(n) = 6.666667 (Expanded Nodes: 45, Evaluated States: 104, Time: 0.24)
+f(n) = 7.0 (Expanded Nodes: 66, Evaluated States: 137, Time: 0.263)
+Problem Solved
+Plan is executed correctly
+(Pddl2.1 semantics) Plan is valid:true
+(0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
+(0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
+(0,00000) attend-monthly-demand Parameters: walmart  - retail  procter  - vendor  
+
+Plan-Length:7
+Planning Time:622
+Heuristic Time:93
+Search Time:264
+Expanded Nodes:68
+States Evaluated:140
+Duration:7
+Total Cost:7.0
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:0
+Number of Duplicates detected:151
+Number of LP invocations:0
