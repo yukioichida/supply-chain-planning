@@ -19,51 +19,41 @@ Simple Conditions: 11
 Reachable actions and processes: |A U P U E|:7
 Take all reachable actions
 Actions used at init:7
-h(n = s_0)=2.6666667
-f(n) = 2.6666667 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.168)
-f(n) = 3.6666665 (Expanded Nodes: 2, Evaluated States: 5, Time: 0.173)
-f(n) = 4.6666665 (Expanded Nodes: 4, Evaluated States: 10, Time: 0.184)
-f(n) = 5.6666665 (Expanded Nodes: 7, Evaluated States: 19, Time: 0.197)
-f(n) = 6.6666665 (Expanded Nodes: 11, Evaluated States: 30, Time: 0.207)
-f(n) = 7.333333 (Expanded Nodes: 16, Evaluated States: 42, Time: 0.215)
-f(n) = 7.3333335 (Expanded Nodes: 17, Evaluated States: 42, Time: 0.215)
-f(n) = 7.6666665 (Expanded Nodes: 18, Evaluated States: 43, Time: 0.216)
-f(n) = 8.333333 (Expanded Nodes: 24, Evaluated States: 57, Time: 0.224)
-f(n) = 8.666667 (Expanded Nodes: 27, Evaluated States: 60, Time: 0.226)
-f(n) = 9.333333 (Expanded Nodes: 36, Evaluated States: 80, Time: 0.236)
-f(n) = 9.666667 (Expanded Nodes: 40, Evaluated States: 86, Time: 0.245)
-f(n) = 10.333333 (Expanded Nodes: 51, Evaluated States: 107, Time: 0.254)
-f(n) = 10.666667 (Expanded Nodes: 56, Evaluated States: 115, Time: 0.258)
-f(n) = 11.333333 (Expanded Nodes: 69, Evaluated States: 140, Time: 0.276)
-f(n) = 11.666667 (Expanded Nodes: 75, Evaluated States: 150, Time: 0.281)
-f(n) = 12.0 (Expanded Nodes: 90, Evaluated States: 176, Time: 0.291)
-f(n) = 12.333333 (Expanded Nodes: 92, Evaluated States: 177, Time: 0.291)
-f(n) = 12.666667 (Expanded Nodes: 99, Evaluated States: 188, Time: 0.295)
-f(n) = 13.0 (Expanded Nodes: 116, Evaluated States: 216, Time: 0.305)
-f(n) = 13.333333 (Expanded Nodes: 119, Evaluated States: 218, Time: 0.306)
-f(n) = 13.666667 (Expanded Nodes: 129, Evaluated States: 231, Time: 0.311)
-f(n) = 14.0 (Expanded Nodes: 147, Evaluated States: 260, Time: 0.328)
+h(n = s_0)=1.0
+f(n) = 1.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.156)
+f(n) = 2.0 (Expanded Nodes: 2, Evaluated States: 5, Time: 0.161)
+f(n) = 3.0 (Expanded Nodes: 4, Evaluated States: 10, Time: 0.173)
+f(n) = 4.0 (Expanded Nodes: 9, Evaluated States: 23, Time: 0.191)
+f(n) = 5.0 (Expanded Nodes: 16, Evaluated States: 38, Time: 0.2)
+f(n) = 6.0 (Expanded Nodes: 27, Evaluated States: 60, Time: 0.21)
+f(n) = 7.0 (Expanded Nodes: 41, Evaluated States: 84, Time: 0.228)
+f(n) = 8.0 (Expanded Nodes: 60, Evaluated States: 117, Time: 0.247)
+f(n) = 9.0 (Expanded Nodes: 83, Evaluated States: 153, Time: 0.271)
+f(n) = 10.0 (Expanded Nodes: 112, Evaluated States: 199, Time: 0.289)
 Problem Solved
 Plan is executed correctly
 (Pddl2.1 semantics) Plan is valid:true
-(0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
-(0,00000) produce-high Parameters: procter  - vendor  
-(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
+(0,00000) order-low Parameters: walmart  - retail  procter  - vendor  
+(0,00000) order-low Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-low Parameters: procter  - vendor  
+(0,00000) replenish-low Parameters: procter  - vendor  walmart  - retail  
+(0,00000) produce-low Parameters: procter  - vendor  
+(0,00000) replenish-low Parameters: procter  - vendor  walmart  - retail  
 (0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
 (0,00000) produce-high Parameters: procter  - vendor  
 (0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
 (0,00000) attend-monthly-demand Parameters: walmart  - retail  procter  - vendor  
 
-Plan-Length:7
-Metric-Value:14.0
-Planning Time:663
-Heuristic Time:146
-Search Time:329
-Expanded Nodes:149
-States Evaluated:263
-Duration:7
-Total Cost:14.0
+Plan-Length:10
+Metric-Value:10.0
+Planning Time:638
+Heuristic Time:128
+Search Time:303
+Expanded Nodes:136
+States Evaluated:240
+Duration:10
+Total Cost:10.0
 Fixed constraint violations during search (zero-crossing):0
 Number of Dead-Ends detected:0
-Number of Duplicates detected:370
+Number of Duplicates detected:320
 Number of LP invocations:0
