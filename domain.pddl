@@ -61,7 +61,6 @@
                 )
     :effect (and 
                 (increase (stock ?r ?i) 1)
-                (increase (total-cost) (max-capacity ?i))
                 (decrease (made-items ?i) 1)
                 (decrease (received-orders ?i ?r) 1)
                 (decrease (total-orders ?i) 1)
@@ -78,7 +77,6 @@
                 )
     :effect (and 
                 (increase (stock ?r ?i) (max-capacity ?i))
-                (increase (total-cost) 1)
                 (decrease (made-items ?i) (max-capacity ?i))
                 (decrease (received-orders ?i ?r) (max-capacity ?i))
                 (decrease (total-orders ?i) (max-capacity ?i))
