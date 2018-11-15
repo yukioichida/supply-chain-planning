@@ -58,5 +58,4 @@
     )
 )
 
-(:metric minimize (total-cost))
 )
