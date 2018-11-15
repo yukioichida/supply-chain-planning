@@ -1,0 +1,119 @@
+Domain parsed
+Problem parsed
+Grounding..
+Light Validation Completed
+Simplification..
+Grounding and Simplification finished
+|A|:21
+|P|:0
+|E|:0
+A* with light numeric landmarks
+w_h set to be 1
+g_h set to be 1
+Running WA-STAR
+Smart Metric Intersection: true
+Landmarks:13
+Not Trivial Landmarks:10
+Hard Conditions: 0
+Simple Conditions: 27
+Reachable actions and processes: |A U P U E|:19
+Take all reachable actions
+Actions used at init:19
+h(n = s_0)=8.166667
+f(n) = 8.166667 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.258)
+f(n) = 8.666666 (Expanded Nodes: 1, Evaluated States: 6, Time: 0.283)
+f(n) = 8.833334 (Expanded Nodes: 3, Evaluated States: 19, Time: 0.297)
+f(n) = 9.333334 (Expanded Nodes: 7, Evaluated States: 35, Time: 0.313)
+f(n) = 9.5 (Expanded Nodes: 15, Evaluated States: 87, Time: 0.368)
+f(n) = 9.666666 (Expanded Nodes: 19, Evaluated States: 106, Time: 0.38)
+f(n) = 9.833334 (Expanded Nodes: 26, Evaluated States: 129, Time: 0.403)
+f(n) = 10.0 (Expanded Nodes: 38, Evaluated States: 155, Time: 0.425)
+f(n) = 10.166666 (Expanded Nodes: 46, Evaluated States: 213, Time: 0.458)
+f(n) = 10.333334 (Expanded Nodes: 50, Evaluated States: 237, Time: 0.471)
+f(n) = 10.5 (Expanded Nodes: 102, Evaluated States: 421, Time: 0.574)
+f(n) = 10.666666 (Expanded Nodes: 125, Evaluated States: 500, Time: 0.607)
+f(n) = 10.833334 (Expanded Nodes: 140, Evaluated States: 545, Time: 0.626)
+f(n) = 11.0 (Expanded Nodes: 176, Evaluated States: 657, Time: 0.671)
+f(n) = 11.166666 (Expanded Nodes: 250, Evaluated States: 1012, Time: 0.799)
+f(n) = 11.333334 (Expanded Nodes: 264, Evaluated States: 1068, Time: 0.822)
+f(n) = 11.5 (Expanded Nodes: 448, Evaluated States: 1596, Time: 1.012)
+f(n) = 11.666666 (Expanded Nodes: 535, Evaluated States: 1841, Time: 1.094)
+f(n) = 11.833334 (Expanded Nodes: 588, Evaluated States: 2061, Time: 1.175)
+f(n) = 12.0 (Expanded Nodes: 687, Evaluated States: 2302, Time: 1.261)
+f(n) = 12.166666 (Expanded Nodes: 1050, Evaluated States: 3566, Time: 1.674)
+f(n) = 12.333334 (Expanded Nodes: 1118, Evaluated States: 3772, Time: 1.743)
+f(n) = 12.5 (Expanded Nodes: 1640, Evaluated States: 5081, Time: 2.173)
+f(n) = 12.666666 (Expanded Nodes: 1899, Evaluated States: 5799, Time: 2.398)
+f(n) = 12.833334 (Expanded Nodes: 2135, Evaluated States: 6707, Time: 2.645)
+f(n) = 13.0 (Expanded Nodes: 2385, Evaluated States: 7319, Time: 2.815)
+f(n) = 13.166666 (Expanded Nodes: 3661, Evaluated States: 10968, Time: 3.794)
+f(n) = 13.333334 (Expanded Nodes: 3883, Evaluated States: 11617, Time: 3.992)
+f(n) = 13.5 (Expanded Nodes: 5188, Evaluated States: 14666, Time: 4.807)
+f(n) = 13.666666 (Expanded Nodes: 5871, Evaluated States: 16287, Time: 5.287)
+f(n) = 13.666667 (Expanded Nodes: 6828, Evaluated States: 19431, Time: 6.157)
+f(n) = 13.833334 (Expanded Nodes: 6832, Evaluated States: 19456, Time: 6.163)
+f(n) = 14.0 (Expanded Nodes: 7441, Evaluated States: 20812, Time: 6.522)
+f(n) = 14.166666 (Expanded Nodes: 11056, Evaluated States: 29699, Time: 8.744)
+f(n) = 14.333333 (Expanded Nodes: 11723, Evaluated States: 31387, Time: 9.21)
+f(n) = 14.333334 (Expanded Nodes: 11733, Evaluated States: 31453, Time: 9.227)
+f(n) = 14.5 (Expanded Nodes: 14784, Evaluated States: 38333, Time: 11.231)
+f(n) = 14.666666 (Expanded Nodes: 16419, Evaluated States: 42025, Time: 12.18)
+f(n) = 14.666667 (Expanded Nodes: 19572, Evaluated States: 50688, Time: 14.301)
+f(n) = 14.833333 (Expanded Nodes: 19632, Evaluated States: 51056, Time: 14.387)
+f(n) = 14.833334 (Expanded Nodes: 19638, Evaluated States: 51094, Time: 14.396)
+f(n) = 15.0 (Expanded Nodes: 21007, Evaluated States: 54001, Time: 15.123)
+f(n) = 15.166666 (Expanded Nodes: 29832, Evaluated States: 73436, Time: 19.934)
+f(n) = 15.333333 (Expanded Nodes: 31539, Evaluated States: 77588, Time: 21.055)
+f(n) = 15.333334 (Expanded Nodes: 31622, Evaluated States: 78010, Time: 21.175)
+f(n) = 15.5 (Expanded Nodes: 38509, Evaluated States: 92978, Time: 24.993)
+f(n) = 15.666666 (Expanded Nodes: 42132, Evaluated States: 100309, Time: 26.882)
+f(n) = 15.666667 (Expanded Nodes: 50764, Evaluated States: 120852, Time: 31.993)
+f(n) = 15.833333 (Expanded Nodes: 51160, Evaluated States: 122526, Time: 32.391)
+f(n) = 15.833334 (Expanded Nodes: 51210, Evaluated States: 122765, Time: 32.449)
+f(n) = 16.0 (Expanded Nodes: 54123, Evaluated States: 128653, Time: 34.105)
+f(n) = 16.166666 (Expanded Nodes: 73501, Evaluated States: 168055, Time: 44.16)
+f(n) = 16.333334 (Expanded Nodes: 77656, Evaluated States: 177168, Time: 46.706)
+f(n) = 16.5 (Expanded Nodes: 93022, Evaluated States: 209999, Time: 55.201)
+f(n) = 16.666666 (Expanded Nodes: 100375, Evaluated States: 224116, Time: 59.055)
+f(n) = 16.833334 (Expanded Nodes: 122530, Evaluated States: 273331, Time: 72.093)
+f(n) = 17.0 (Expanded Nodes: 128689, Evaluated States: 285552, Time: 75.426)
+f(n) = 17.166666 (Expanded Nodes: 167944, Evaluated States: 360673, Time: 95.149)
+f(n) = 17.333334 (Expanded Nodes: 177020, Evaluated States: 379326, Time: 100.142)
+f(n) = 17.5 (Expanded Nodes: 209654, Evaluated States: 446084, Time: 118.282)
+f(n) = 17.666666 (Expanded Nodes: 223725, Evaluated States: 471350, Time: 125.313)
+f(n) = 17.833334 (Expanded Nodes: 272776, Evaluated States: 571544, Time: 152.765)
+f(n) = 18.0 (Expanded Nodes: 285011, Evaluated States: 595147, Time: 159.316)
+Problem Solved
+Plan is executed correctly
+(Pddl2.1 semantics) Plan is valid:true
+(0,00000) order-high Parameters: walmart  - retail  kraft  - vendor  
+(0,00000) produce-high Parameters: kraft  - vendor  
+(0,00000) replenish-high Parameters: kraft  - vendor  walmart  - retail  
+(0,00000) attend-monthly-demand Parameters: walmart  - retail  kraft  - vendor  
+(0,00000) order-high Parameters: bestbuy  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) replenish-high Parameters: procter  - vendor  bestbuy  - retail  
+(0,00000) order-high Parameters: bestbuy  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) replenish-low Parameters: procter  - vendor  bestbuy  - retail  
+(0,00000) replenish-low Parameters: procter  - vendor  bestbuy  - retail  
+(0,00000) attend-monthly-demand Parameters: bestbuy  - retail  procter  - vendor  
+(0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
+(0,00000) order-low Parameters: walmart  - retail  procter  - vendor  
+(0,00000) replenish-low Parameters: procter  - vendor  walmart  - retail  
+(0,00000) attend-monthly-demand Parameters: walmart  - retail  procter  - vendor  
+
+Plan-Length:18
+Planning Time:159708
+Heuristic Time:137893
+Search Time:159318
+Expanded Nodes:285013
+States Evaluated:595155
+Duration:18
+Total Cost:18.0
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:2175
+Number of Duplicates detected:2580640
+Number of LP invocations:0

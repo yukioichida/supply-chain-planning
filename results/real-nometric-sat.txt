@@ -16,58 +16,52 @@ Simple Conditions: 27
 Reachable actions and processes: |A U P U E|:20
 Take all reachable actions
 Actions used at init:19
-h(n = s_0)=6.01403
- g(n)= 3.0 h(n)=3.01403
- g(n)= 5.0 h(n)=1.0140301
- g(n)= 8.0 h(n)=0.014030001
- g(n)= 11.0 h(n)=0.00801
- g(n)= 13.0 h(n)=0.007
- g(n)= 13.0 h(n)=0.006
- g(n)= 13.0 h(n)=0.005
- g(n)= 17.0 h(n)=0.004666667
- g(n)= 20.0 h(n)=0.0043333336
- g(n)= 20.0 h(n)=0.004
- g(n)= 23.0 h(n)=0.0033333334
- g(n)= 23.0 h(n)=0.0023333335
- g(n)= 26.0 h(n)=0.00201
- g(n)= 29.0 h(n)=0.0013333334
- g(n)= 29.0 h(n)=0.001
- g(n)= 29.0 h(n)=0.0
+h(n = s_0)=15.00001
+ g(n)= 1.0 h(n)=12.00001
+ g(n)= 2.0 h(n)=10.00001
+ g(n)= 3.0 h(n)=9.0
+ g(n)= 4.0 h(n)=8.0
+ g(n)= 5.0 h(n)=7.0
+ g(n)= 6.0 h(n)=6.0
+ g(n)= 7.0 h(n)=5.0
+ g(n)= 10.0 h(n)=4.0
+ g(n)= 12.0 h(n)=3.6666665
+ g(n)= 13.0 h(n)=2.6666665
+ g(n)= 17.0 h(n)=1.6666667
+ g(n)= 18.0 h(n)=1.0
+ g(n)= 19.0 h(n)=0.0
 Problem Solved
 Plan is executed correctly
 (Pddl2.1 semantics) Plan is valid:true
 (0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
 (0,00000) order-high Parameters: walmart  - retail  kraft  - vendor  
 (0,00000) order-high Parameters: bestbuy  - retail  procter  - vendor  
-(0,00000) produce-high Parameters: procter  - vendor  
 (0,00000) produce-high Parameters: kraft  - vendor  
 (0,00000) replenish-high Parameters: kraft  - vendor  walmart  - retail  
 (0,00000) attend-monthly-demand Parameters: walmart  - retail  kraft  - vendor  
-(0,00000) order-low Parameters: bestbuy  - retail  procter  - vendor  
 (0,00000) produce-high Parameters: procter  - vendor  
-(0,00000) replenish-low Parameters: procter  - vendor  bestbuy  - retail  
+(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
 (0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
-(0,00000) replenish-low Parameters: procter  - vendor  walmart  - retail  
-(0,00000) replenish-low Parameters: procter  - vendor  walmart  - retail  
 (0,00000) produce-high Parameters: procter  - vendor  
 (0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
 (0,00000) attend-monthly-demand Parameters: walmart  - retail  procter  - vendor  
+(0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
 (0,00000) order-high Parameters: bestbuy  - retail  procter  - vendor  
 (0,00000) replenish-high Parameters: procter  - vendor  bestbuy  - retail  
-(0,00000) produce-high Parameters: procter  - vendor  
 (0,00000) replenish-high Parameters: procter  - vendor  bestbuy  - retail  
 (0,00000) attend-monthly-demand Parameters: bestbuy  - retail  procter  - vendor  
 
-Plan-Length:21
-Metric-Value:29.0
-Planning Time:558
-Heuristic Time:68
-Search Time:191
-Expanded Nodes:37
-States Evaluated:355
-Duration:21
-Total Cost:29.0
+Plan-Length:19
+Planning Time:648
+Heuristic Time:96
+Search Time:221
+Expanded Nodes:46
+States Evaluated:427
+Duration:19
+Total Cost:19.0
 Fixed constraint violations during search (zero-crossing):0
 Number of Dead-Ends detected:0
-Number of Duplicates detected:54
+Number of Duplicates detected:77
 Number of LP invocations:0

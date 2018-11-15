@@ -1,0 +1,83 @@
+Domain parsed
+Problem parsed
+Grounding..
+Light Validation Completed
+Simplification..
+Grounding and Simplification finished
+|A|:21
+|P|:0
+|E|:0
+A* with light numeric landmarks
+w_h set to be 1
+g_h set to be 1
+Running WA-STAR
+Smart Metric Intersection: true
+Landmarks:13
+Not Trivial Landmarks:10
+Hard Conditions: 0
+Simple Conditions: 27
+Reachable actions and processes: |A U P U E|:19
+Take all reachable actions
+Actions used at init:19
+h(n = s_0)=3.0
+f(n) = 3.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.206)
+f(n) = 4.0 (Expanded Nodes: 8, Evaluated States: 49, Time: 0.267)
+f(n) = 5.0 (Expanded Nodes: 30, Evaluated States: 158, Time: 0.349)
+f(n) = 6.0 (Expanded Nodes: 96, Evaluated States: 464, Time: 0.577)
+f(n) = 7.0 (Expanded Nodes: 246, Evaluated States: 1101, Time: 0.83)
+f(n) = 8.0 (Expanded Nodes: 557, Evaluated States: 2322, Time: 1.24)
+f(n) = 9.0 (Expanded Nodes: 1158, Evaluated States: 4529, Time: 1.942)
+f(n) = 10.0 (Expanded Nodes: 2230, Evaluated States: 8210, Time: 2.99)
+f(n) = 11.0 (Expanded Nodes: 4090, Evaluated States: 14267, Time: 4.718)
+f(n) = 12.0 (Expanded Nodes: 7127, Evaluated States: 23606, Time: 7.197)
+f(n) = 13.0 (Expanded Nodes: 12013, Evaluated States: 38022, Time: 10.855)
+f(n) = 14.0 (Expanded Nodes: 19534, Evaluated States: 59204, Time: 16.294)
+f(n) = 15.0 (Expanded Nodes: 30960, Evaluated States: 90284, Time: 24.321)
+f(n) = 16.0 (Expanded Nodes: 47798, Evaluated States: 134429, Time: 35.497)
+f(n) = 17.0 (Expanded Nodes: 72269, Evaluated States: 196651, Time: 51.597)
+f(n) = 18.0 (Expanded Nodes: 107087, Evaluated States: 282586, Time: 73.925)
+f(n) = 19.0 (Expanded Nodes: 155950, Evaluated States: 399896, Time: 104.476)
+f(n) = 20.0 (Expanded Nodes: 223456, Evaluated States: 558069, Time: 146.864)
+f(n) = 21.0 (Expanded Nodes: 315540, Evaluated States: 768434, Time: 206.368)
+f(n) = 22.0 (Expanded Nodes: 439589, Evaluated States: 1046215, Time: 286.765)
+Problem Solved
+Plan is executed correctly
+(Pddl2.1 semantics) Plan is valid:true
+(0,00000) order-low Parameters: walmart  - retail  procter  - vendor  
+(0,00000) order-low Parameters: walmart  - retail  kraft  - vendor  
+(0,00000) order-low Parameters: bestbuy  - retail  procter  - vendor  
+(0,00000) order-low Parameters: walmart  - retail  kraft  - vendor  
+(0,00000) produce-low Parameters: kraft  - vendor  
+(0,00000) replenish-low Parameters: kraft  - vendor  walmart  - retail  
+(0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
+(0,00000) produce-low Parameters: procter  - vendor  
+(0,00000) replenish-low Parameters: procter  - vendor  walmart  - retail  
+(0,00000) attend-monthly-demand Parameters: walmart  - retail  procter  - vendor  
+(0,00000) produce-low Parameters: kraft  - vendor  
+(0,00000) replenish-low Parameters: kraft  - vendor  walmart  - retail  
+(0,00000) attend-monthly-demand Parameters: walmart  - retail  kraft  - vendor  
+(0,00000) order-low Parameters: bestbuy  - retail  procter  - vendor  
+(0,00000) produce-low Parameters: procter  - vendor  
+(0,00000) replenish-low Parameters: procter  - vendor  bestbuy  - retail  
+(0,00000) produce-low Parameters: procter  - vendor  
+(0,00000) replenish-low Parameters: procter  - vendor  bestbuy  - retail  
+(0,00000) order-high Parameters: bestbuy  - retail  procter  - vendor  
+(0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) replenish-high Parameters: procter  - vendor  bestbuy  - retail  
+(0,00000) attend-monthly-demand Parameters: bestbuy  - retail  procter  - vendor  
+
+Plan-Length:24
+Metric-Value:22.0
+Planning Time:292866
+Heuristic Time:240838
+Search Time:292500
+Expanded Nodes:448168
+States Evaluated:1066431
+Duration:24
+Total Cost:22.0
+Fixed constraint violations during search (zero-crossing):0
+Number of Dead-Ends detected:18713
+Number of Duplicates detected:3918390
+Number of LP invocations:0
