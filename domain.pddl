@@ -25,18 +25,6 @@
 
 ; =================== PRODUCE ===============================
 
-(:action produce-low
-    :parameters (?i - vendor)
-    :precondition (and 
-                    (>= (total-orders ?i) 1) ; produce only if have orders
-                    (< (made-items ?i) (storage-limit ?i)) ; verify if this produce will reach the limit
-                )
-    :effect (and 
-        (increase (made-items ?i) 1)
-        (increase (total-cost) 1)
-    )
-)
-
 (:action produce-high
     :parameters (?i - vendor)
     :precondition (and 
@@ -46,26 +34,25 @@
     :effect (and 
         (increase (total-cost) (max-capacity ?i))
         (increase (made-items ?i) (max-capacity ?i))
+        (decrease (total-orders ?i) (max-capacity ?i))
     )
 )
 
-; =================== REPLENISH ===============================
-
-(:action replenish-low
-    :parameters (?i - vendor
-                 ?r - retail
-                )
+(:action produce-low
+    :parameters (?i - vendor)
     :precondition (and 
-                    (> (made-items ?i) 0)
-                    (>= (received-orders ?i ?r) 1)
+                    (>= (total-orders ?i) 1) ; produce only if have orders
+                    (< (made-items ?i) (storage-limit ?i)) ; verify if this produce will reach the limit
                 )
     :effect (and 
-                (increase (stock ?r ?i) 1)
-                (decrease (made-items ?i) 1)
-                (decrease (received-orders ?i ?r) 1)
-                (decrease (total-orders ?i) 1)
+        (increase (made-items ?i) 1)
+        (increase (total-cost) 1)
+        (decrease (total-orders ?i) 1)
     )
 )
+
+
+; =================== REPLENISH ===============================
 
 (:action replenish-high
     :parameters (?i - vendor
@@ -79,23 +66,25 @@
                 (increase (stock ?r ?i) (max-capacity ?i))
                 (decrease (made-items ?i) (max-capacity ?i))
                 (decrease (received-orders ?i ?r) (max-capacity ?i))
-                (decrease (total-orders ?i) (max-capacity ?i))
+    )
+)
+
+(:action replenish-low
+    :parameters (?i - vendor
+                 ?r - retail
+                )
+    :precondition (and 
+                    (> (made-items ?i) 0)
+                    (>= (received-orders ?i ?r) 1)
+                )
+    :effect (and 
+                (increase (stock ?r ?i) 1)
+                (decrease (made-items ?i) 1)
+                (decrease (received-orders ?i ?r) 1)
     )
 )
 
 ; =================== ORDER ===============================
-
-(:action order-low
-    :parameters (?r - retail ?i - vendor)
-    :precondition (and 
-                        (connected ?i ?r)
-    )
-    :effect (and 
-                (increase (received-orders ?i ?r) 1)
-                (increase (total-orders ?i) 1)
-                (increase (total-cost) 1)
-    )
-)
 
 (:action order-high
     :parameters (?r - retail ?i - vendor)
@@ -109,6 +98,17 @@
     )
 )
 
+(:action order-low
+    :parameters (?r - retail ?i - vendor)
+    :precondition (and 
+                        (connected ?i ?r)
+    )
+    :effect (and 
+                (increase (received-orders ?i ?r) 1)
+                (increase (total-orders ?i) 1)
+                (increase (total-cost) 1)
+    )
+)
 ; =================== DEMAND ===============================
 
 (:action attend-monthly-demand
