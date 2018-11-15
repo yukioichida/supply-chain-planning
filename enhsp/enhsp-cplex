@@ -1,0 +1,3 @@
+#!/bin/bash 
+
+    java -classpath /home/ichida/dev_env/puc/ENHSP-Public/src/:/home/ichida/dev_env/puc/ENHSP-Public/libs/PPMaJal2.jar:/home/ichida/dev_env/puc/ENHSP-Public/libs/* ENHSP "$@"

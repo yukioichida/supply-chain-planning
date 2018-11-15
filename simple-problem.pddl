@@ -4,7 +4,7 @@
 
 (:objects 
     walmart - retail
-    procter - industry
+    procter - vendor
 )
 
 ;One industry with the objective of attend the demand of one retail
@@ -13,8 +13,7 @@
     
     (= (total-orders procter) 0)
     (= (made-items procter) 0)
-    (= (limit procter) 10)
-    (not (limit-reached procter))
+    (= (storage-limit procter) 10)
     (= (max-capacity procter) 3)
 
     (connected procter walmart)
@@ -30,11 +29,8 @@
 ; ONE demand of their products in the retail Walmart
 (:goal (and
         (= (demand walmart procter) 1)
-        ;   (= (received-orders procter walmart) 0)
     )
 )
 
-
-
-;(:metric minimize (total-cost))
+(:metric minimize (total-cost))
 )

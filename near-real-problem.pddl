@@ -5,8 +5,8 @@
 (:objects 
     walmart - retail
     bestbuy - retail
-    procter - industry
-    kraft - industry
+    procter - vendor
+    kraft - vendor
 )
 
 ;One industry with the objective of attend the demand of one retail
@@ -16,15 +16,13 @@
     ;procter
     (= (total-orders procter) 0)
     (= (made-items procter) 0)
-    (= (limit procter) 10)
-    (not (limit-reached procter))
+    (= (storage-limit procter) 10)
     (= (max-capacity procter) 3)
 
     ;kraft
     (= (total-orders kraft) 0)
     (= (made-items kraft) 0)
-    (= (limit kraft) 5)
-    (not (limit-reached kraft))
+    (= (storage-limit kraft) 5)
     (= (max-capacity kraft) 2)
 
     ; walmart
