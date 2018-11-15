@@ -20,18 +20,18 @@ Reachable actions and processes: |A U P U E|:7
 Take all reachable actions
 Actions used at init:7
 h(n = s_0)=3.0
-f(n) = 3.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.159)
-f(n) = 3.6666667 (Expanded Nodes: 1, Evaluated States: 2, Time: 0.161)
-f(n) = 4.666667 (Expanded Nodes: 3, Evaluated States: 8, Time: 0.172)
-f(n) = 5.0 (Expanded Nodes: 9, Evaluated States: 24, Time: 0.192)
-f(n) = 5.333333 (Expanded Nodes: 10, Evaluated States: 26, Time: 0.193)
-f(n) = 5.6666665 (Expanded Nodes: 12, Evaluated States: 33, Time: 0.198)
-f(n) = 5.666667 (Expanded Nodes: 14, Evaluated States: 39, Time: 0.202)
-f(n) = 6.0 (Expanded Nodes: 27, Evaluated States: 64, Time: 0.215)
-f(n) = 6.333333 (Expanded Nodes: 30, Evaluated States: 68, Time: 0.217)
-f(n) = 6.6666665 (Expanded Nodes: 38, Evaluated States: 85, Time: 0.233)
-f(n) = 6.666667 (Expanded Nodes: 45, Evaluated States: 104, Time: 0.24)
-f(n) = 7.0 (Expanded Nodes: 66, Evaluated States: 137, Time: 0.263)
+f(n) = 3.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.151)
+f(n) = 3.6666667 (Expanded Nodes: 1, Evaluated States: 2, Time: 0.153)
+f(n) = 4.666667 (Expanded Nodes: 3, Evaluated States: 8, Time: 0.165)
+f(n) = 5.0 (Expanded Nodes: 9, Evaluated States: 21, Time: 0.185)
+f(n) = 5.333333 (Expanded Nodes: 10, Evaluated States: 23, Time: 0.186)
+f(n) = 5.6666665 (Expanded Nodes: 12, Evaluated States: 29, Time: 0.19)
+f(n) = 5.666667 (Expanded Nodes: 14, Evaluated States: 35, Time: 0.193)
+f(n) = 6.0 (Expanded Nodes: 24, Evaluated States: 51, Time: 0.202)
+f(n) = 6.333333 (Expanded Nodes: 25, Evaluated States: 53, Time: 0.203)
+f(n) = 6.6666665 (Expanded Nodes: 31, Evaluated States: 66, Time: 0.209)
+f(n) = 6.666667 (Expanded Nodes: 37, Evaluated States: 79, Time: 0.215)
+f(n) = 7.0 (Expanded Nodes: 52, Evaluated States: 97, Time: 0.23)
 Problem Solved
 Plan is executed correctly
 (Pddl2.1 semantics) Plan is valid:true
@@ -44,14 +44,14 @@ Plan is executed correctly
 (0,00000) attend-monthly-demand Parameters: walmart  - retail  procter  - vendor  
 
 Plan-Length:7
-Planning Time:622
-Heuristic Time:93
-Search Time:264
-Expanded Nodes:68
-States Evaluated:140
+Planning Time:549
+Heuristic Time:71
+Search Time:231
+Expanded Nodes:54
+States Evaluated:100
 Duration:7
 Total Cost:7.0
 Fixed constraint violations during search (zero-crossing):0
 Number of Dead-Ends detected:0
-Number of Duplicates detected:151
+Number of Duplicates detected:110
 Number of LP invocations:0

@@ -20,16 +20,16 @@ Reachable actions and processes: |A U P U E|:7
 Take all reachable actions
 Actions used at init:7
 h(n = s_0)=1.0
-f(n) = 1.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.156)
-f(n) = 2.0 (Expanded Nodes: 2, Evaluated States: 5, Time: 0.161)
-f(n) = 3.0 (Expanded Nodes: 4, Evaluated States: 10, Time: 0.173)
-f(n) = 4.0 (Expanded Nodes: 9, Evaluated States: 23, Time: 0.191)
-f(n) = 5.0 (Expanded Nodes: 16, Evaluated States: 38, Time: 0.2)
-f(n) = 6.0 (Expanded Nodes: 27, Evaluated States: 60, Time: 0.21)
-f(n) = 7.0 (Expanded Nodes: 41, Evaluated States: 84, Time: 0.228)
-f(n) = 8.0 (Expanded Nodes: 60, Evaluated States: 117, Time: 0.247)
-f(n) = 9.0 (Expanded Nodes: 83, Evaluated States: 153, Time: 0.271)
-f(n) = 10.0 (Expanded Nodes: 112, Evaluated States: 199, Time: 0.289)
+f(n) = 1.0 (Expanded Nodes: 0, Evaluated States: 0, Time: 0.154)
+f(n) = 2.0 (Expanded Nodes: 2, Evaluated States: 5, Time: 0.158)
+f(n) = 3.0 (Expanded Nodes: 4, Evaluated States: 9, Time: 0.168)
+f(n) = 4.0 (Expanded Nodes: 8, Evaluated States: 19, Time: 0.181)
+f(n) = 5.0 (Expanded Nodes: 13, Evaluated States: 28, Time: 0.189)
+f(n) = 6.0 (Expanded Nodes: 20, Evaluated States: 44, Time: 0.201)
+f(n) = 7.0 (Expanded Nodes: 29, Evaluated States: 58, Time: 0.208)
+f(n) = 8.0 (Expanded Nodes: 40, Evaluated States: 80, Time: 0.218)
+f(n) = 9.0 (Expanded Nodes: 54, Evaluated States: 100, Time: 0.231)
+f(n) = 10.0 (Expanded Nodes: 70, Evaluated States: 129, Time: 0.249)
 Problem Solved
 Plan is executed correctly
 (Pddl2.1 semantics) Plan is valid:true
@@ -47,13 +47,13 @@ Plan is executed correctly
 Plan-Length:10
 Metric-Value:10.0
 Planning Time:638
-Heuristic Time:128
-Search Time:303
-Expanded Nodes:136
-States Evaluated:240
+Heuristic Time:86
+Search Time:253
+Expanded Nodes:78
+States Evaluated:142
 Duration:10
 Total Cost:10.0
 Fixed constraint violations during search (zero-crossing):0
 Number of Dead-Ends detected:0
-Number of Duplicates detected:320
+Number of Duplicates detected:161
 Number of LP invocations:0

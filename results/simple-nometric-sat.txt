@@ -19,32 +19,29 @@ Actions used at init:7
 h(n = s_0)=5.6666665
  g(n)= 1.0 h(n)=3.6666665
  g(n)= 2.0 h(n)=2.6666665
- g(n)= 6.0 h(n)=2.0
- g(n)= 7.0 h(n)=1.6666667
- g(n)= 8.0 h(n)=1.0
- g(n)= 9.0 h(n)=0.0
+ g(n)= 5.0 h(n)=1.6666667
+ g(n)= 6.0 h(n)=1.0
+ g(n)= 7.0 h(n)=0.0
 Problem Solved
 Plan is executed correctly
 (Pddl2.1 semantics) Plan is valid:true
 (0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
 (0,00000) produce-high Parameters: procter  - vendor  
-(0,00000) produce-low Parameters: procter  - vendor  
-(0,00000) produce-low Parameters: procter  - vendor  
 (0,00000) order-high Parameters: walmart  - retail  procter  - vendor  
-(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
 (0,00000) produce-high Parameters: procter  - vendor  
+(0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
 (0,00000) replenish-high Parameters: procter  - vendor  walmart  - retail  
 (0,00000) attend-monthly-demand Parameters: walmart  - retail  procter  - vendor  
 
-Plan-Length:9
-Planning Time:409
-Heuristic Time:13
-Search Time:91
-Expanded Nodes:16
-States Evaluated:73
-Duration:9
-Total Cost:9.0
+Plan-Length:7
+Planning Time:435
+Heuristic Time:7
+Search Time:81
+Expanded Nodes:11
+States Evaluated:40
+Duration:7
+Total Cost:7.0
 Fixed constraint violations during search (zero-crossing):0
 Number of Dead-Ends detected:0
-Number of Duplicates detected:6
+Number of Duplicates detected:4
 Number of LP invocations:0
